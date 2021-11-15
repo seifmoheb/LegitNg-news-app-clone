@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorPrimary">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="false"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextColor="@color/lightGrayColor">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="Latest" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="business and economy" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/life"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="nigeria life and style" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/wedding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="naija wedding" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/politics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="politics" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="education" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/forecasts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="opinion of experts analytics and forecasts" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="ng people news" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/football"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="football" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="photo" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/featured"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="latest naija featured news" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="local news" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/world"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="false"
+                    android:text="world" />
+            </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

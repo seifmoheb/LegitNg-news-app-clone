@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "867556212440",
+    "firebase_url": "https://legit-ng-clone.firebaseio.com",
+    "project_id": "legit-ng-clone",
+    "storage_bucket": "legit-ng-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867556212440:android:641296f7af863ba383e1ad",
+        "android_client_info": {
+          "package_name": "com.app.legitngclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867556212440-j562t09q83tt61h53hdregbiukrl4bfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaQBaUGDgn0Wml3EjMtvnUflA3M9a9TDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867556212440-j562t09q83tt61h53hdregbiukrl4bfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
